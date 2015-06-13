@@ -2,4 +2,8 @@
 
 # Install pip requirements
 pip install -r etc/requirements.txt
-pip install -e git+https://${GH_NAME}:${GH_TOKEN}@github.com/korobi/korobi_docs_theme.git#egg=korobi_docs_theme ?> /dev/null
+
+# eh, will try this
+git clone https://${GH_NAME}:${GH_TOKEN}@github.com/korobi/korobi_docs_theme.git ?> /dev/null
+cd korobi_docs_theme
+python setup.py install
